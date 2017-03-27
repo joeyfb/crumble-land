@@ -1,0 +1,45 @@
+newmtl Layer_7 Merged Material
+Ka 0.000000 0.000000 0.000000
+Kd 0.803922 0.803922 0.803922
+Ks 0.200000 0.200000 0.200000
+Ns 6.062867
+d 1.000000
+Tr 0.000000
+map_Kd Layer_7 Merged Diffuse Texture.PNG 
+
+newmtl Layer_8 Merged Material
+Ka 0.000000 0.000000 0.000000
+Kd 0.803922 0.803922 0.803922
+Ks 0.200000 0.200000 0.200000
+Ns 6.062867
+d 1.000000
+Tr 0.000000
+map_Kd Layer_8 Merged Diffuse Texture.PNG 
+
+newmtl Layer_11 Merged Material
+Ka 0.000000 0.000000 0.000000
+Kd 0.803922 0.803922 0.803922
+Ks 0.200000 0.200000 0.200000
+Ns 6.062867
+d 1.000000
+Tr 0.000000
+map_Kd Layer_11 Merged Diffuse Texture.PNG 
+
+newmtl Layer_13 Merged Material
+Ka 0.000000 0.000000 0.000000
+Kd 0.803922 0.803922 0.803922
+Ks 0.200000 0.200000 0.200000
+Ns 6.062867
+d 1.000000
+Tr 0.000000
+map_Kd Layer_13 Merged Diffuse Texture.PNG 
+
+newmtl Layer_14 Merged Material
+Ka 0.000000 0.000000 0.000000
+Kd 0.803922 0.803922 0.803922
+Ks 0.200000 0.200000 0.200000
+Ns 6.062867
+d 1.000000
+Tr 0.000000
+map_Kd Layer_14 Merged Diffuse Texture.PNG 
+

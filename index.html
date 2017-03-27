@@ -3,7 +3,7 @@
     <head>
         <title>Hello, WebVR! - A-Frame</title>
         <meta name="description" content="Hello, WebVR! - A-Frame">
-        <script src="js/aframe5.js"></script>
+        <script src="js/aframe-extras.js"></script>
     </head>
     <body>
         <a-scene>
@@ -12,27 +12,35 @@
 
                 <a-asset-item id="vamp-obj" src="models/vamp/vamp-original-sm.obj"></a-asset-item>
 
+                <a-asset-item id="terrain-obj" src="models/terrain/crumble-ville.obj"></a-asset-item>
+
+                <a-asset-item id="terrain-mtl" src="models/terrain/crumble-ville.mtl"></a-asset-item>
 <!-- 
                 <a-asset-item id="vamp-dae" src="models/vampire.dae"></a-asset-item>
   -->
 
             </a-assets>
 
-            <!-- objects -->
- 
-            <a-obj-model   
-                src="#vamp-obj"
-                position="-7 4 -16"
-                rotation="-90 75 0"
-                scale="3 3 3"
-            ></a-obj-model>
+            <!-- collidables -->
+            <a-grid 
+                rotation="-83 0 0"
+                position="-10 -0.25 0"
+                height="50" with="50"
+                visible="false"
+            static-body></a-grid>
 
-<!-- 
-            <a-entity collada-model="#vamp-dae"
-                position="-7 3 -8"
-                rotation="-90 75 0"
+<!--             <a-box 
+                position="0 2.2 -23"
+                height="4" with="8"
+            static-body></a-box> -->
+
+            <!--  land -->
+            <a-entity
+                obj-model="obj: #terrain-obj; mtl: #terrain-mtl"
+                position="-17.5 12.9 -11"
+                rotation="-82 92 15"
+                scale="50 50 50"
             ></a-entity>
- -->
 
             <!-- sky -->
             <a-sky
@@ -46,27 +54,16 @@
                 color="#EA6156"
             ></a-sphere>
 
-            <!-- floor -->
-            <a-plane 
-                position="0 0 -4"
-                rotation="-90 0 0"
-                shader="flat"
-                width="400" height="400"
-                color="#617F64"
-            ></a-plane>
-
-            <!-- pond -->
-            <a-circle 
-                position="-10 0.1 -20"
-                rotation="-90 0 0"
-                radius="10"
-                metalness="0.7" roughness="0.7"
-                color="#0063C0"
-            ></a-circle>
-            
-            <!-- camera -->
+            <!-- lights, camera... -->
             <a-light type="ambient" intensity="0.5" color="#fff"></a-light>
             <a-light type="point" intensity="4" color="#EA6156" position="0 30 -100"></a-light>
+
+      <a-entity camera
+                universal-controls
+                kinematic-body
+                jump-ability
+                position="10 1.764 0"></a-entity>
+
         </a-scene>
     </body>
 </html>
